@@ -60,7 +60,7 @@ local action = function(msg, blocks, ln)
             api.sendKeyboard(msg.from.id, message, keyboard, true)
             end
 			if msg.chat.type == 'group' or msg.chat.type == 'supergroup' then
-          api.sendKeyboard(msg.chat.id, 'برای ارتباط با آرین روی دکمه زیر بزن و برو تو ربات 😃😃 ,do_keyboard_startme(), true)
+          api.sendKeyboard(msg.chat.id, 'برای ارتباط با آرین روی دکمه زیر بزن و برو تو ربات 😃😃' ,do_keyboard_startme(), true)
         end
         return
     end
