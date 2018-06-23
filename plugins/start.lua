@@ -31,10 +31,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-		{
 	        {text = 'About Me 👥', callback_data = '!aboutus'},
-        },
-	    {
 	        {text = '🔸DrWolf Bot🔹', callback_data = '!robot'},
         }
     }
