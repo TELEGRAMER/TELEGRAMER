@@ -94,8 +94,9 @@ return {
 	    '^/(start)@DragonWolfRobot$',
 	    '^/(start)$',
 	    '^/(help)$',
-	    '^###cb:!(home)',
 		'^###cb:!(contact)',
+	    '^###cb:!(home)',
+	'^###cb:!(contact)',
 	    '^###cb:!(share)',
 
     }
