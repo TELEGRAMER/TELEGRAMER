@@ -13,14 +13,10 @@ bot_init = function(on_reload) -- The function run when the bot is started or re
 	print(colors('%{blue bright}Loading config.lua...'))
 	config = dofile('config.lua') -- Load configuration file.
 	if config.bot_api_key == '' then
-		print(colors('%{red bright}API KEY MISSING!'))
+		print(colors('%{red bright}Token Is Missing :/'))
 		return
 	end
-	print(colors('%{red}BeatBotTeam'))
-	print(colors('%{red}Persian Channel @BeatBot_Team'))
-	print(colors('%{red}BeatBotTeam'))
-	print(colors('%{red}English Channel @BeatBotTeam'))
-	print(colors('%{yellow}DeVeLoPeR : @AmirHo3inF'))
+	print(colors('%{yellow}Adminstrator & Writer = @Dragon_WoLf '))
 	print(colors('%{green}----------------'))
 	print(colors('%{blue bright}Loading utilities.lua...'))
 	cross = dofile('utilities.lua') -- Load miscellaneous and cross-plugin functions.
@@ -43,7 +39,7 @@ bot_init = function(on_reload) -- The function run when the bot is started or re
 	end
 	print(colors('%{blue}Plugins loaded:'), #plugins)
 
-	print(colors('%{blue bright}BOT RUNNING: @'..bot.username .. ', AKA ' .. bot.first_name ..' ('..bot.id..')'))
+	print(colors('%{blue bright}DragonWolf BOT Is Runnig: @'..bot.username .. ', AKA ' .. bot.first_name ..' ('..bot.id..')'))
 	if not on_reload then
 		save_log('starts')
 		db:hincrby('bot:general', 'starts', 1)
